@@ -10,8 +10,14 @@
             .orderleft{
                 display: flex;
                 gap: 80px;
-                align-items: flex-start;
-                align-self: center;
+                align-items: center;
+                justify-content: center;
+                margin-top: 40px;
+               
+            }
+            .orderleft p{
+                max-width: 500px;
+                line-height: 1.6;
             }
             .row{
                 display: flex;
@@ -38,7 +44,7 @@
     <body>
         <h1> It's like Hola but without the H</h1>
         <div class="orderleft">
-            <div><img src ="IMG_4057.jpg" alt="Ola smiling " width="500" height="600"></div>
+            <div><img class="notalink" src ="IMG_4057.jpg" alt="Ola smiling " width="800" height="500"></div>
             <div>
                 <p>Hey there, I'm Ola a computer science student, passionate about problem-solving, sustainable energy research and
                     positive technological advancements that could reshape our world for the better.
@@ -52,20 +58,6 @@
                 </p>
             </div>
         </div>
-        <div class="below"> <!-- work experience section-->
-            <h1>Work Experience</h1>
-            <h2> Research Intern - University of Saskatchewan</h2>
-            <ul><li>Assisted with clone validation research tasks for the development of clone detection software.</li> 
-                 <li>Collaborated with peers to understand and build systems that simplify scientific workflows.</li>
-                 <li>Partook in user study surveys to enhance the research process.</li>
-                 <li>Collected and analyzed data (i.e. bug reports) using Excel spreadsheets.</li></ul>
-            <h2> Programming instructor - Real programming 4 kidz</h2>
-            <ul> <li>Tailored courses specific to the students’ interests using basic math and computing skills.</li>
-                 <li>Instructed students using various languages such as Python and Java.</li>
-                 <li>Coordinated with my supervisor to provide catch-up sessions for students to ensure better understanding
-                 of foundational concepts. </li></ul>
-        </div>
-        <br>
         <h1>Projects</h1>
         <div class="row"> <!-- projects section-->
             <div class="column">
@@ -76,7 +68,7 @@
             </div>
 
             <div class="column">
-            <a href="https://olasgame.itch.io/bubble-busters"></ahref> <img src="bb-photo.png" alt="bubble-busters intro screen" width="250" height="200"> </a>
+            <a href="https://olasgame.itch.io/bubble-busters"></a> <img src="bb-photo.png" alt="bubble-busters intro screen" width="250" height="200"> </a>
             <ul> <li>Name: Videogame - Bubblebuster</li>
                 <li>Technology: Godot, Gitlab </li>
             </ul>
@@ -109,6 +101,21 @@
                 <li>Technology: JavaScript, React, Github, CouchDB</li>
             </ul>
             </div>
+        </div>
+        <br>
+
+        <div class="below"> <!-- work experience section-->
+            <h1>Work Experience</h1>
+            <h2> Research Intern - University of Saskatchewan</h2>
+            <ul><li>Assisted with clone validation research tasks for the development of clone detection software.</li> 
+                 <li>Collaborated with peers to understand and build systems that simplify scientific workflows.</li>
+                 <li>Partook in user study surveys to enhance the research process.</li>
+                 <li>Collected and analyzed data (i.e. bug reports) using Excel spreadsheets.</li></ul>
+            <h2> Programming instructor - Real programming 4 kidz</h2>
+            <ul> <li>Tailored courses specific to the students’ interests using basic math and computing skills.</li>
+                 <li>Instructed students using various languages such as Python and Java.</li>
+                 <li>Coordinated with my supervisor to provide catch-up sessions for students to ensure better understanding
+                 of foundational concepts. </li></ul>
         </div>
         <br>
         <div class="below"> <!-- videos-->
