@@ -5,7 +5,7 @@
         <style>
             body{ /*affects the entire body*/
                 font-family: "Arial", sans-serif;
-                background: #94cd9a;
+                background: #9ac79e;
             }
             h1 {
                 text-align: center;
@@ -60,31 +60,42 @@
                 animation: fadeUp 0.9s ease-out forwards;
             }
             .hero {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                min-height: 80vh;
+            }
+            .hero-image {
+                overflow: hidden;
+            }
+            .hero-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .hero-text {
                 display: flex;
                 align-items: center;
-                justify-content: center;
-                gap: 80px;
-                min-height: 90vh;
-                padding: 0 8vw;
+                padding: 0 6vw;
             }
-            .hero img {
-                width: 75%;
-                max-width: 520px;
-                border-radius: 24px;
-            }
-            .hero p {
+            .hero-text p {
                 max-width: 520px;
                 font-size: 1.05rem;
                 line-height: 1.7;
+            }
+
+            /*links*/
+            img.alink{
+                align-items: center;
+                padding: auto;
             }
 
         </style>
     </head>
     <body>
         <div class="hero fade-up">
-            <img class="notalink" src ="IMG_4057.jpg" alt="Ola smiling ">
+            <div class="hero-image"><img class="notalink" src ="IMG_4057.jpg" alt="Ola smiling "></div>
             
-            <p>Hey there, I'm Ola a computer science student, passionate about problem-solving, sustainable energy research and
+            <div class="hero-text"><p>Hey there, I'm Ola a computer science student, passionate about problem-solving, sustainable energy research and
                 positive technological advancements that could reshape our world for the better.<br>
                 
                 Currently in my fourth year, I have been exposed to efficient and dynamic methods of programming, how to incorporate
@@ -93,7 +104,7 @@
                 
                 I'm excited for the opportunity to apply these skills and make a real impact in the ever-changing world of computer science.
                 No one ever said it'd be easy, but I am here for the challenge 
-            </p>
+            </p></div>
             
         </div>
       
