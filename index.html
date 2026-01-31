@@ -5,7 +5,7 @@
         <style>
             body{
                 font-family: "Arial", sans-serif;
-                background-color: linear-gradient(135deg,#f3ead2,#e8dcc0);
+                background: linear-gradient(135deg, #f3ead2, #e8dcc0);
             }
             .orderleft{
                 display: flex;
@@ -78,27 +78,49 @@
             .fade-up{
                 animation: fadeUp 0.9s ease-out forwards;
             }
+
+            .hero {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 80px;
+                min-height: 90vh;
+                padding: 0 8vw;
+            }
+
+            .hero img {
+                width: 45%;
+                max-width: 520px;
+                border-radius: 24px;
+            }
+
+            .hero p {
+                max-width: 520px;
+                font-size: 1.05rem;
+                line-height: 1.7;
+            }
+
         </style>
     </head>
     <body>
         <h1> It's like Hola but without the H</h1>
-        <div class="section fade-up">
-            <div class="orderleft">
-                <div><img class="notalink" src ="IMG_4057.jpg" alt="Ola smiling " width="800" height="500"></div>
-                <div>
-                    <p>Hey there, I'm Ola a computer science student, passionate about problem-solving, sustainable energy research and
-                        positive technological advancements that could reshape our world for the better.
-                        
-                        Currently in my fourth year, I have been exposed to efficient and dynamic methods of programming, how to incorporate
-                        research strategies to tackle complicated problems, developing leadership skills and good collaborative abilities, and 
-                        how to navigate the evolving world of Artificial Intelligence- specifically how to apply and advance it responsibly.
-                        
-                        I'm excited for the opportunity to apply these skills and make a real impact in the ever-changing world of computer science.
-                        No one ever said it'd be easy, but I am here for the challenge 
-                    </p>
-                </div>
-            </div>
+        
+        <div class="hero fade-up">
+            <img class="notalink" src ="IMG_4057.jpg" alt="Ola smiling ">
+            
+            <p>Hey there, I'm Ola a computer science student, passionate about problem-solving, sustainable energy research and
+                positive technological advancements that could reshape our world for the better.<br>
+                
+                Currently in my fourth year, I have been exposed to efficient and dynamic methods of programming, how to incorporate
+                research strategies to tackle complicated problems, developing leadership skills and good collaborative abilities, and 
+                how to navigate the evolving world of Artificial Intelligence- specifically how to apply and advance it responsibly.<br>
+                
+                I'm excited for the opportunity to apply these skills and make a real impact in the ever-changing world of computer science.
+                No one ever said it'd be easy, but I am here for the challenge 
+            </p>
+            
         </div>
+      
 
         <div class="section"> 
             <h1>Projects</h1>
