@@ -6,64 +6,11 @@
             body{
                 font-family: "Arial", sans-serif;
                 background: linear-gradient(135deg, #f3ead2, #e8dcc0);
-            }
-            .orderleft{
-                display: flex;
-                gap: 80px;
-                align-items: center;
-                justify-content: center;
-                margin-top: 40px;
-               
-            }
-            .orderleft p{
-                max-width: 500px;
-                line-height: 1.6;
-            }
+            }    
             h1 {
                 text-align: center;
                 font-size: 2.6rem;
                 margin-top: 40px;
-            }
-            .orderleft img {
-                border-radius: 20px;
-            }
-            .row{
-                display: flex;
-                flex-wrap: wrap;
-                padding: auto;
-            }
-            .column{
-                flex: 30%;
-                padding: 20px;
-                background: white;
-                border-radius: 16px;
-                margin: 20px;
-                box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-            }
-            .column:hover {
-                transform: translateY(-6px);
-                box-shadow: 0 20px 40px rgba(0,0,0,0.12);
-            }
-            
-            .column img{
-                margin-top: 8px;
-                vertical-align: middle;
-            }
-            img.alink{
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-            }
-            img:hover{
-                transform: scale(1.03);
-                box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-            }
-            .section{
-                background: rgba(255, 255, 255, 0.7);
-                border-radius: 16px;
-                padding: 40px;
-                margin: 60px auto;
-                max-width: 1100px;
-                box-shadow: 0 20px 40px rgba(0,0,0,0.08);
             }
             @keyframes fadeUp {
                 from{
@@ -78,7 +25,6 @@
             .fade-up{
                 animation: fadeUp 0.9s ease-out forwards;
             }
-
             .hero {
                 display: flex;
                 align-items: center;
@@ -87,19 +33,47 @@
                 min-height: 90vh;
                 padding: 0 8vw;
             }
-
             .hero img {
                 width: 45%;
                 max-width: 520px;
                 border-radius: 24px;
             }
-
             .hero p {
                 max-width: 520px;
                 font-size: 1.05rem;
                 line-height: 1.7;
             }
-
+            .projects {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 50px;
+                max-width: 1200px;
+                margin: 0 auto 80px;
+            }
+            .project img {
+                width: 100%;
+                border-radius: 14px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .project img:hover {
+                transform: translateY(-6px) scale(1.02);
+                box-shadow: 0 18px 35px rgba(0,0,0,0.18);
+            }
+            .project ul {
+                margin-top: 12px;
+                padding-left: 18px;
+            }
+            .experience {
+                max-width: 900px;
+                margin: 80px auto;
+            }
+            .experience h2 {
+                margin-top: 40px;
+            }
+            .experience ul {
+                margin-left: 20px;
+                line-height: 1.7;
+            }
         </style>
     </head>
     <body>
@@ -122,69 +96,69 @@
         </div>
       
 
-        <div class="section"> 
-            <h1>Projects</h1>
-            <div class="row"> <!-- projects section-->
-                <div class="column">
-                <a href="https://hannah-watt.itch.io/xt4g"> <img class="alink" src="xt4g-photo.png" alt="xt4g intro screen" width="250" height="200"> </a>
-                <ul><li>Name: Videogame - XT4G+</li>
-                    <li>Technology: Godot, Gitlab</li>
-                </ul>
-                </div>
+        
+        <h1>Projects</h1>
+        <div class="projects fade-up"> <!-- projects section-->
+            <div class="project">
+            <a href="https://hannah-watt.itch.io/xt4g"> <img  src="xt4g-photo.png" alt="xt4g intro screen"> </a>
+            <ul><li>Name: Videogame - XT4G+</li>
+                <li>Technology: Godot, Gitlab</li>
+            </ul>
+            </div>
 
-                <div class="column">
-                <a href="https://olasgame.itch.io/bubble-busters"><img class="alink" src="bb-photo.png" alt="bubble-busters intro screen" width="250" height="200"> </a>
-                <ul> <li>Name: Videogame - Bubblebuster</li>
-                    <li>Technology: Godot, Gitlab </li>
-                </ul>
-                </div>
+            <div class="project">
+            <a href="https://olasgame.itch.io/bubble-busters"><img class="alink" src="bb-photo.png" alt="bubble-busters intro screen"> </a>
+            <ul> <li>Name: Videogame - Bubblebuster</li>
+                <li>Technology: Godot, Gitlab </li>
+            </ul>
+            </div>
 
-                <div class="column">
-                <a href="https://github.com/ola-kdo23/trolltrot"><img class="alink" src="tt-photo.png" alt="level-photo" width="250" height="200"></a>
-                <ul> <li>Name: Level generation - Trolltrot</li>
-                    <li>Technology: Godot, Github</li>
-                </ul>
-                </div>
+            <div class="project">
+            <a href="https://github.com/ola-kdo23/trolltrot"><img class="alink" src="tt-photo.png" alt="level-photo"></a>
+            <ul> <li>Name: Level generation - Trolltrot</li>
+                <li>Technology: Godot, Github</li>
+            </ul>
+            </div>
 
-                <div class="column">
-                <a href="https://git.cs.usask.ca/halo-370/halo370/-/tree/master?ref_type=heads"> <img class="alink" src="filler2-photo.png" alt="phython-app" width="250" height="200" ></a>
-                <ul> <li>Name: Mobile App</li>
-                    <li>Technology: Python-kivy package, Gitlab</li>
-                </ul>
-                </div>
+            <div class="project">
+            <a href="https://git.cs.usask.ca/halo-370/halo370/-/tree/master?ref_type=heads"> <img class="alink" src="filler2-photo.png" alt="phython-app"></a>
+            <ul> <li>Name: Mobile App</li>
+                <li>Technology: Python-kivy package, Gitlab</li>
+            </ul>
+            </div>
 
-                <div class="column">
-                <a href="https://git.cs.usask.ca/cmpt381-2024-a4/pla326"> <img class="alink" src="UI-photo.png" alt="ui-photo" width="250" height="200"> </a>
-                <ul> <li>Name: User Interactive System </li>
-                    <li>Technology: Java, Gitlab </li>
-                </ul>
-                </div>
+            <div class="project">
+            <a href="https://git.cs.usask.ca/cmpt381-2024-a4/pla326"> <img class="alink" src="UI-photo.png" alt="ui-photo"> </a>
+            <ul> <li>Name: User Interactive System </li>
+                <li>Technology: Java, Gitlab </li>
+            </ul>
+            </div>
 
-                <div class="column">
-                <a href="https://github.com/ola-kdo23/couchdb_react_server"><img class="alink" src="filler-photo.png" alt="server-photo" width="250" height="200"></a>
-                <ul> <li>Name: Message posting website </li>
-                    <li>Technology: JavaScript, React, Github, CouchDB</li>
-                </ul>
-                </div>
+            <div class="project">
+            <a href="https://github.com/ola-kdo23/couchdb_react_server"><img class="alink" src="filler-photo.png" alt="server-photo"></a>
+            <ul> <li>Name: Message posting website </li>
+                <li>Technology: JavaScript, React, Github, CouchDB</li>
+            </ul>
             </div>
         </div>
+        
         <br>
 
-        <div class="section">
-            <div class="below"> <!-- work experience section-->
-                <h1>Work Experience</h1>
-                <h2> Research Intern - University of Saskatchewan</h2>
-                <ul><li>Assisted with clone validation research tasks for the development of clone detection software.</li> 
-                    <li>Collaborated with peers to understand and build systems that simplify scientific workflows.</li>
-                    <li>Partook in user study surveys to enhance the research process.</li>
-                    <li>Collected and analyzed data (i.e. bug reports) using Excel spreadsheets.</li></ul>
-                <h2> Programming instructor - Real programming 4 kidz</h2>
-                <ul> <li>Tailored courses specific to the students’ interests using basic math and computing skills.</li>
-                    <li>Instructed students using various languages such as Python and Java.</li>
-                    <li>Coordinated with my supervisor to provide catch-up sessions for students to ensure better understanding
-                    of foundational concepts. </li></ul>
-            </div>
+        
+        <div class="experience"> <!-- work experience section-->
+            <h1>Work Experience</h1>
+            <h2> Research Intern - University of Saskatchewan</h2>
+            <ul><li>Assisted with clone validation research tasks for the development of clone detection software.</li> 
+                <li>Collaborated with peers to understand and build systems that simplify scientific workflows.</li>
+                <li>Partook in user study surveys to enhance the research process.</li>
+                <li>Collected and analyzed data (i.e. bug reports) using Excel spreadsheets.</li></ul>
+            <h2> Programming instructor - Real programming 4 kidz</h2>
+            <ul> <li>Tailored courses specific to the students’ interests using basic math and computing skills.</li>
+                <li>Instructed students using various languages such as Python and Java.</li>
+                <li>Coordinated with my supervisor to provide catch-up sessions for students to ensure better understanding
+                of foundational concepts. </li></ul>
         </div>
+        
         <br>
         <div class="below"> <!-- videos-->
 
