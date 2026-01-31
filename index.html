@@ -3,28 +3,28 @@
     <head>
         <title>Get to know Ola!</title>
         <style>
-            body{
+            body{ /*affects the entire body*/
                 font-family: "Arial", sans-serif;
-                background: linear-gradient(135deg, #f3ead2, #e8dcc0);
+                background: #a8f8b0;
             }
-            
             h1 {
                 text-align: center;
                 font-size: 2.6rem;
                 margin-top: 40px;
             }
-            
-            .row{
-                display: flex;
-                flex-wrap: wrap;
-                padding: auto;
+
+            /*these affect the display of the projects section, into rows and columns and the animation on them*/
+            .row{ 
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 40px;
+                max-width: 1200px;
+                margin: 0 auto;
             }
             .column{
-                flex: 30%;
                 padding: 20px;
-                background: white;
+                background: rgb(221, 255, 218);
                 border-radius: 16px;
-                margin: 20px;
                 box-shadow: 0 10px 25px rgba(0,0,0,0.08);
                 transition: transform 0.3s ease, box-shadow 0.3s ease;
             }
@@ -45,7 +45,8 @@
                 box-shadow: 0 10px 25px rgba(0,0,0,0.15);
             }
             
-            @keyframes fadeUp {
+            /*transition for the intro- image and text*/
+            @keyframes fadeUp { 
                 from{
                     opacity: 0;
                     transform: translateY(25px);
@@ -58,7 +59,6 @@
             .fade-up{
                 animation: fadeUp 0.9s ease-out forwards;
             }
-
             .hero {
                 display: flex;
                 align-items: center;
@@ -67,13 +67,11 @@
                 min-height: 90vh;
                 padding: 0 8vw;
             }
-
             .hero img {
-                width: 45%;
+                width: 75%;
                 max-width: 520px;
                 border-radius: 24px;
             }
-
             .hero p {
                 max-width: 520px;
                 font-size: 1.05rem;
@@ -83,8 +81,6 @@
         </style>
     </head>
     <body>
-        <h1> It's like Hola but without the H</h1>
-        
         <div class="hero fade-up">
             <img class="notalink" src ="IMG_4057.jpg" alt="Ola smiling ">
             
