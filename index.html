@@ -99,10 +99,17 @@
 
             .contact-dialog {
                 border: none;
+                border-radius: 20px;
                 padding: 32px;
                 max-width: 360px;
                 width: 90%;
                 background: rgb(221, 255, 218);
+                box-shadow: 0 20px 65px rgba(0,0,0,0.25);
+                animation: popIn 0.25s ease-out;
+            }
+            .contact-dialog::backdrop {
+                background: rgba(0,0,0,0.45);
+                backdrop-filter: blur(4px);
             }
 
             .contact-dialog h2 {
@@ -120,10 +127,23 @@
             .contact-links a {
                 text-align: left;
                 font-style: italic;
+                text-decoration: none;
+                padding: 10px 12px;
+                border-radius: 10px;
                 color: #222;
+                transition: background 0.2s ease, transform 0.2s ease;
+            }
+            .contact-links a:hover {
+                background: rgba(0,0,0,0.06);
+                transform: translateX(4px);
+            }
+            .contact-links a:focus {
+                outline: none;
+                background: rgba(0,0,0,0.1);
             }
 
             .close-btn {
+                margin: 16px auto 0;
                 width: 50%;
                 padding: 10px;
                 border: none;
@@ -131,6 +151,17 @@
                 background: #ddd;
                 cursor: pointer;
                 align-items: center;
+            }
+            
+            @keyframes popIn {
+                from {
+                    opacity: 0;
+                    transform: scale(0.95);
+                }
+                to {
+                    opacity: 1;
+                    transform: scale(1);
+                }
             }
 
 
