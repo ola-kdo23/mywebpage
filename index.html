@@ -79,6 +79,24 @@
             }
 
             /*contact info button*/
+            .contact{
+                margin-top: 24px;
+                padding: 12px 24px;
+                border: none;
+                border-radius: 12px;
+                background: #4CAF50;
+                color: white;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+
+            .contact:hover {
+                background: #45a049;
+            }
+            .contact:focus {
+                outline: 2px solid #45a049;
+            }
+
             .contact-dialog {
                 border: none;
                 border-radius: 20px;
@@ -89,20 +107,9 @@
                 box-shadow: 0 25px 60px rgba(0,0,0,0.25);
             }
 
-            .contact-dialog::backdrop {
-                background: rgba(0,0,0,0.45);
-            }
-
             .contact-dialog h2 {
                 margin-top: 0;
                 text-align: center;
-            }
-
-            .contact-links {
-                display: flex;
-                flex-direction: column;
-                gap: 16px;
-                margin: 24px 0;
             }
 
             .contact-links a {
@@ -111,7 +118,6 @@
                 text-align: center;
                 text-decoration: none;
                 font-weight: 600;
-                background: #f2f2f2;
                 color: #222;
             }
 
@@ -121,7 +127,7 @@
             }
 
             .close-btn {
-                width: 100%;
+                width: 50%;
                 padding: 10px;
                 border: none;
                 border-radius: 12px;
@@ -149,8 +155,8 @@
                 <dialog id="contact-dialog">
                     <h2>Lets connect</h2>
                     <div class="contact-links">
-                        <p>Email: <a href="mailto:olad04951@gmail.com">olad04951@gmail.com</a></p>
-                        <p>LinkedIn: <a href="https://www.linkedin.com/in/olado04951">Ola Dayo-Olaide</a></p>
+                        <a href="mailto:olad04951@gmail.com">Send an email</a>
+                        <a href="https://www.linkedin.com/in/olado04951">View LinkedIn profile</a>
                     </div>
                     <button class="close-btn" type="button" onclick="document.getElementById('contact-dialog').close()">Close</button>
                 </dialog>
