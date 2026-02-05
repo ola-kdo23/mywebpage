@@ -78,6 +78,58 @@
                 line-height: 1.7;
             }
 
+            /*contact info button*/
+            .contact-dialog {
+                border: none;
+                border-radius: 20px;
+                padding: 32px;
+                max-width: 360px;
+                width: 90%;
+                background: white;
+                box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+            }
+
+            .contact-dialog::backdrop {
+                background: rgba(0,0,0,0.45);
+            }
+
+            .contact-dialog h2 {
+                margin-top: 0;
+                text-align: center;
+            }
+
+            .contact-links {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                margin: 24px 0;
+            }
+
+            .contact-links a {
+                padding: 12px;
+                border-radius: 12px;
+                text-align: center;
+                text-decoration: none;
+                font-weight: 600;
+                background: #f2f2f2;
+                color: #222;
+            }
+
+            .contact-links a:hover {
+                transform: translateY(-2px);
+                background: #e0e0e0;
+            }
+
+            .close-btn {
+                width: 100%;
+                padding: 10px;
+                border: none;
+                border-radius: 12px;
+                background: #ddd;
+                cursor: pointer;
+            }
+
+
         </style>
     </head>
     <body>
@@ -92,7 +144,16 @@
                 how to navigate the evolving world of Artificial Intelligence- specifically how to apply and advance it responsibly.<br>
                 
                 I'm excited for the opportunity to apply these skills and make a real impact in the ever-changing world of computer science.
-                No one ever said it'd be easy, but I am here for the challenge 
+                No one ever said it'd be easy, but I am here for the challenge<br>
+                <button type="button" class="contact" onclick="document.getElementById('contact-dialog').showModal()">Get in Touch</button> 
+                <dialog id="contact-dialog">
+                    <h2>Lets connect</h2>
+                    <div class="contact-links">
+                        <p>Email: <a href="mailto:olad04951@gmail.com">olad04951@gmail.com</a></p>
+                        <p>LinkedIn: <a href="https://www.linkedin.com/in/olado04951">Ola Dayo-Olaide</a></p>
+                    </div>
+                    <button class="close-btn" type="button" onclick="document.getElementById('contact-dialog').close()">Close</button>
+                </dialog>
             </p></div>
             
         </div>
