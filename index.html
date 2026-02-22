@@ -176,6 +176,25 @@
                 }
             }
 
+            /*experience section*/
+            .experience-section {
+                max-width: 900px;
+                margin: 80px auto;
+            }
+
+            .experience-card {
+                background: rgb(221, 255, 218); /* same as project cards */
+                padding: 28px;
+                border-radius: 16px;
+                margin-bottom: 30px;
+                box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .experience-card:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+            }
 
         </style>
     </head>
@@ -260,25 +279,43 @@
             <div class="below"> <!-- work experience section-->
                 <h1>Work Experience</h1>
 
-                <h3>May 2023 - August 2023</h3>
-                <h4> Research Intern - University of Saskatchewan</h4>
-                <p>Contributed to clone validation research tasks for the development of clone detection software, which varied on
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <span class="date">May 2023 - August 2023</span>
+                        <h3>Research Intern - University of Saskatchewan</h3>
+                    </div>
+                    <p>
+                    Contributed to clone validation research tasks for the development of clone detection software, which varied on
                     individual participation and group collaboration. Tasks included data mining, manual validation and conducting 
-                    data analysis on bug reports using Excel in order to extract useful information. </p>
+                    data analysis on bug reports using Excel in order to extract useful information.
+                    </p>
+                </div>
 
-                <h3>February 2023 - June 2023</h3>
-                <h4> Programming instructor - Real programming 4 kidz</h4>
-                <p> Tailored courses specific to the students' interests and instructed classes using various languages such as 
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <span class="date">February 2023 – June 2023</span>
+                        <h3>Programming instructor - Real programming 4 kidz</h3>
+                    </div>
+                    <p>
+                    Tailored courses specific to the students' interests and instructed classes using various languages such as 
                     Python and Java. Also coordinated with my supervisor to provide catch-up sessions for students to ensure better 
-                    understanding of foundational concepts. </p>
+                    understanding of foundational concepts.                     </p>
+                </div>
 
-                <h3>July 2022 - Present</h3>
-                <h4>Team leader - Fable Coffee shop</h4>
-                <p>Assigned daily responsibilties to team members at a Fast paced coffee shop to ensure smooth workflows, while also
-                providing excellent customer service to visiting clients </p>
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <span class="date">July 2022 - Present</span>
+                        <h3>Team leader - Fable Coffee shop</h3>
+                    </div>
+                    <p>
+                    Assigned daily responsibilties to team members at a Fast paced coffee shop to ensure smooth workflows, while also
+                    providing excellent customer service to visiting clients
+                    </p>
+                </div>
             </div>
-            <a href="Resume.docx">Click to download resume</a>
+            <a class="resume-link" href="Resume.docx">Download full resume</a>
         </div>
+
         <br>
         <div class="below"> <!-- videos-->
             <h1>Language proficiencies</h1>
