@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Get to know Ola!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
         <style>
             body{ /*affects the entire body*/
@@ -34,7 +35,16 @@
                 box-shadow: 0 20px 40px rgba(0,0,0,0.12);
             }
             
-            .column img{
+            .column video {
+                width: 100%;
+                height: auto;
+                max-width: 540px;
+            }
+            
+            .column img {
+                width: 100%;
+                height: auto;
+                max-width: 325px;
                 margin-top: 8px;
                 vertical-align: middle;
             }
@@ -199,6 +209,48 @@
                 margin: 0 auto;
             }
 
+            /* Responsive design */
+            @media (max-width: 768px) {
+                .hero {
+                    grid-template-columns: 1fr;
+                    height: auto;
+                }
+                .hero-text {
+                    padding: 20px;
+                    text-align: center;
+                }
+                .row {
+                    grid-template-columns: 1fr;
+                    gap: 20px;
+                }
+                .vidrow {
+                    grid-template-columns: 1fr;
+                    gap: 20px;
+                }
+                h1 {
+                    font-size: 2rem;
+                }
+                .experience-section {
+                    margin: 40px 20px;
+                }
+                .experience-card {
+                    padding: 20px;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .column {
+                    padding: 15px;
+                }
+                .hero-text p {
+                    font-size: 1rem;
+                }
+                .contact {
+                    padding: 10px 20px;
+                    font-size: 0.9rem;
+                }
+            }
+
         </style>
     </head>
 
@@ -234,42 +286,42 @@
             <h1>Projects</h1>
             <div class="row"> <!-- projects section-->
                 <div class="column">
-                <a href="https://hannah-watt.itch.io/xt4g"> <img class="alink" src="xt4g-photo.png" alt="xt4g intro screen" width="325" height="200"> </a>
+                <a href="https://hannah-watt.itch.io/xt4g"> <img class="alink" src="xt4g-photo.png" alt="xt4g intro screen"> </a>
                 <ul><li>Name: Videogame - XT4G+</li>
                     <li>Technology: Godot, Gitlab</li>
                 </ul>
                 </div>
 
                 <div class="column">
-                <a href="https://olasgame.itch.io/bubble-busters"><img class="alink" src="bb-photo.png" alt="bubble-busters intro screen" width="325" height="200"> </a>
+                <a href="https://olasgame.itch.io/bubble-busters"><img class="alink" src="bb-photo.png" alt="bubble-busters intro screen"> </a>
                 <ul> <li>Name: Videogame - Bubblebuster</li>
                     <li>Technology: Godot, Gitlab </li>
                 </ul>
                 </div>
 
                 <div class="column">
-                <a href="https://github.com/ola-kdo23/trolltrot"><img class="alink" src="tt-photo.png" alt="level-photo" width="325" height="200"></a>
+                <a href="https://github.com/ola-kdo23/trolltrot"><img class="alink" src="tt-photo.png" alt="level-photo"></a>
                 <ul> <li>Name: Level generation - Trolltrot</li>
                     <li>Technology: Godot, Github</li>
                 </ul>
                 </div>
 
                 <div class="column">
-                <a href="https://git.cs.usask.ca/halo-370/halo370/-/tree/master?ref_type=heads"> <img class="alink" src="filler2-photo.png" alt="phython-app" width="325" height="200" ></a>
+                <a href="https://git.cs.usask.ca/halo-370/halo370/-/tree/master?ref_type=heads"> <img class="alink" src="filler2-photo.png" alt="phython-app" ></a>
                 <ul> <li>Name: Mobile App</li>
                     <li>Technology: Python-kivy package, Gitlab</li>
                 </ul>
                 </div>
 
                 <div class="column">
-                <a href="https://git.cs.usask.ca/cmpt381-2024-a4/pla326"> <img class="alink" src="UI-photo.png" alt="ui-photo" width="325" height="200"> </a>
+                <a href="https://git.cs.usask.ca/cmpt381-2024-a4/pla326"> <img class="alink" src="UI-photo.png" alt="ui-photo"> </a>
                 <ul> <li>Name: User Interactive System </li>
                     <li>Technology: Java, Gitlab </li>
                 </ul>
                 </div>
 
                 <div class="column">
-                <a href="https://github.com/ola-kdo23/couchdb_react_server"><img class="alink" src="filler-photo.png" alt="server-photo" width="325" height="200"></a>
+                <a href="https://github.com/ola-kdo23/couchdb_react_server"><img class="alink" src="filler-photo.png" alt="server-photo"></a>
                 <ul> <li>Name: Message posting website </li>
                     <li>Technology: JavaScript, React, Github, CouchDB</li>
                 </ul>
@@ -323,14 +375,14 @@
             <h1>Language proficiencies</h1>
             <div class="vidrow">
                 <div class="column">
-                    <video width="540" height="300" controls> 
+                    <video controls> 
                         <source src="English_proof2.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <ul><li>Language: English</li></ul>
                 </div>
                 <div class="column">
-                    <video width="540" height="300" controls> 
+                    <video controls> 
                         <source src="French_proof@2.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
